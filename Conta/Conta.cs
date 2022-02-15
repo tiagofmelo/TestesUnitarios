@@ -1,4 +1,6 @@
-﻿namespace Principal
+﻿using System;
+
+namespace Principal
 {
     public class Conta
     {
@@ -13,7 +15,11 @@
 
         public bool Sacar(decimal valor)
         {
-            if (saldo < valor) return false;
+            if (saldo < valor || valor == 0)
+                return false;
+
+            if (valor < 0)
+                throw new ArgumentOutOfRangeException();
 
             this.saldo -= valor;
 
