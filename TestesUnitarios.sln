@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conta", "Conta\Conta.csproj", "{A956EE1B-8436-4D4F-8C09-4B66584D111E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContaTeste", "ContaTeste\ContaTeste.csproj", "{B649B60C-D491-49FA-A188-D20F137C0DD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A956EE1B-8436-4D4F-8C09-4B66584D111E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A956EE1B-8436-4D4F-8C09-4B66584D111E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A956EE1B-8436-4D4F-8C09-4B66584D111E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A956EE1B-8436-4D4F-8C09-4B66584D111E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B649B60C-D491-49FA-A188-D20F137C0DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B649B60C-D491-49FA-A188-D20F137C0DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B649B60C-D491-49FA-A188-D20F137C0DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B649B60C-D491-49FA-A188-D20F137C0DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69F478EC-B3C6-45E0-A633-C65A18D168A9}
+	EndGlobalSection
+EndGlobal
