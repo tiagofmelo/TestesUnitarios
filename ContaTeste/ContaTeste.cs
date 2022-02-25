@@ -22,6 +22,7 @@ namespace ContaTeste
         }
 
         [Test]
+        [Category("Teste")]
         public void TesteSacar()
         {
             bool resutado = conta.Sacar(120);
@@ -30,6 +31,7 @@ namespace ContaTeste
         }
 
         [Test]
+        [Category("Teste")]
         public void TesteSacarSemSaldo()
         {
             bool resutado = conta.Sacar(300);
@@ -38,7 +40,7 @@ namespace ContaTeste
         }
 
         [Test]
-        [Category("Valores Inválidos")]
+        [Category("Teste")]
         //[Ignore("Pendencia de implementação")]
         public void TesteSacarValorNegativo()
         {
@@ -48,7 +50,7 @@ namespace ContaTeste
         }
 
         [Test]
-        [Category("Valores Inválidos")]
+        [Category("Teste")]
         public void TesteSacarValorZero()
         {
             bool resutado = conta.Sacar(0);
@@ -57,10 +59,14 @@ namespace ContaTeste
         }
 
         [Test]
-        [Timeout(4000)]
-        public void TesteMetodoLento()
+        [Category("Teste")]
+        public void TesteSolicitarEmprestimo()
         {
+            conta.SetValidadorCredito(new ValidadorCreditoFake());
 
+            bool resutado = conta.SolicitarEmprestimo(1000);
+
+            Assert.IsTrue(resutado);
         }
     }
 }
